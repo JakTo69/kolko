@@ -1,64 +1,17 @@
-:root {
-    --RED: red;
+body { font-family: sans-serif; }
+.plansza {
+    width: 306px; background: #f0f0f0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 3px;
+    display: grid;
+    border: 1px solid #ddd;
+    cursor: pointer;
 }
-  body {
-    margin: 0;
-    padding: 0;
-    color: var(--RED);
-    font-family: serif ;
-  }
-  * {
-    box-sizing: border-box;
-  }
-  
-  h1 {
-    font-size: 120px;
-    text-transform: uppercase;
-  }
-  
-  .container {
-    padding: 50px;
-    height: 80vh;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  
-  #plansza {
-    margin-top: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 450px;
-  }
-  
-  .box {
-    height: 150px;
-    width: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 150px;
-    color: var(--RED);
-  }
-  
-  .box:hover {
-    cursor: pointer;
-  }
-  
-  button {
-    padding: 10px 20px;
-    border-radius: 10px;
-    background-color: var(--RED);
-    color: white;
-    border-color: var(--RED);
-    font-size: 18px;
-    transition: 200ms transform;
-  }
-  
-  button:hover {
-    cursor: pointer;
-    transform: translateY(-2px);
-  }
-  
+.box {
+    background: #fff; display: flex; justify-content: center; align-items: center;
+    font-size: 2rem; color: #222;
+}
+.box:hover {
+    background: #fafafa;
+}
