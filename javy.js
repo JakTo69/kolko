@@ -34,7 +34,7 @@ function check() {
         'fa-circle-o': []
     };
     wynik.forEach((pole, index) => ruch[pole] ? ruch[pole].push(index) : null);
-    combinations.forEach(combination => {
+    kombinacje.forEach(kombinacje => {
         if (kombinacje.every(index => ruch[Gracz1].indexOf(index) > -1)) {
           zwyciezca = 'Gracz X wygrał';
         }
