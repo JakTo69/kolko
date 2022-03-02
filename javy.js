@@ -13,7 +13,7 @@ const kombinacje = [
 ];
 
 const boxes = [...document.querySelectorAll('.box')];
-boxes.forEach(box => box.addEventListener('click', wybór));
+boxes.forEach(box => box.addEventListener('click', pick));
 
 function wybierz(event) {
     const { x, y } = event.target.dataset;
